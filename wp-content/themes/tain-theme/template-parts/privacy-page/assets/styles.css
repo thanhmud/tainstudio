@@ -1,0 +1,119 @@
+.privacy_policy-page {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.privacy_policy-page .wrap_img-bg {
+  display: none;
+}
+.privacy_policy-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.privacy_policy-heading .title {
+  /*color: var(--color-dark-1);*/
+  font-size: var(--font-h1);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 3.9375rem */
+  text-transform: uppercase;
+}
+.privacy_policy-heading .icon_foliage {
+  width: 13.2rem;
+  height: 1.5625rem;
+  margin-top: 0.5rem;
+}
+/* privacy_policy content*/
+.privacy_policy-content {
+  margin-top: 2.5rem;
+  position:relative;
+ 
+}
+.privacy_policy-content h2,
+.privacy_policy-content h3,
+.privacy_policy-content h4,
+.privacy_policy-content h5,
+.privacy_policy-content h6 {
+  padding: 0.75rem 0;
+  color:var(--color-dark-1);
+}
+
+.privacy_policy-content p {
+  color: #000;
+  font-size: var(--font-body3);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.privacy_policy-content ul {
+  padding: 0.75rem 0 0;
+}
+.privacy_policy-content ul:last-of-type {
+  padding: 0.75rem 0;
+}
+.privacy_policy-content ul li {
+  margin-left: 1.5rem;
+  position: relative;
+  list-style-type: none;
+}
+.privacy_policy-content ul:first-of-type li:after {
+  content: "";
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  left: -0.8rem;
+  top: 0.7rem;
+  background: #000;
+  border-radius: 100rem;
+}
+.privacy_policy-content ul li strong {
+  color: var(--color-primary);
+}
+.privacy_policy-content ul:last-of-type li strong:after {
+  content: "";
+  width: 0.35rem;
+  height: 0.35rem;
+  position: absolute;
+  left: -0.8rem;
+  top: 0.6rem;
+  background: var(--color-primary);
+  border-radius: 100rem;
+}
+
+@media (max-width: 768px) {
+  .privacy_policy-page {
+  	padding-bottom: 6rem;
+  }
+  .privacy_policy-page .wrap_img-bg {
+    display: flex;
+    position: absolute;
+    bottom:-0.5rem;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .privacy_policy-page .wrap_img-bg .background_image {
+    width: 42.8125rem;
+    height: 7.25rem;
+    flex-shrink: 0;
+  }
+  .privacy_policy-heading {
+    padding-top: 2.5rem;
+  }
+
+  .privacy_policy-heading .title {
+    font-size: var(--font-h4);
+    line-height: 120%;
+  }
+  .privacy_policy-heading .icon_foliage {
+    width: 9.2rem;
+    height: 1rem;
+    margin-top: 0.25rem;
+  }
+  /* privacy_policy content*/
+  .privacy_policy-content {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+}

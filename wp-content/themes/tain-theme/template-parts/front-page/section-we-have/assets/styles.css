@@ -1,0 +1,80 @@
+/*section-we-have*/
+.section-we-have {
+    background-image: url(/wp-content/uploads/2025/08/new-gradient-6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-we-have .content {
+    text-align: center;
+}
+.section-we-have .item:hover img { 
+    transform: rotate(360deg);
+}
+.section-we-have .item {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    box-shadow: rgb(0 255 21 / 35%) 4px 12px 15px;
+    text-align: left;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.section-we-have .item:hover {
+    background: #01431d;
+}
+.section-we-have .item .child-title img {
+    filter: invert(1);
+    width: 2.5rem;
+    height: auto;
+    display: block;
+    transition: transform 0.8s ease;
+}
+.section-we-have .note {
+    font-size: var(--font-sub1-4);
+}
+.section-we-have .child-content ul {
+    list-style-type: disclosure-closed;
+}
+.section-we-have .note a {
+    background: var(--button-primary);
+    color: #F9FAFB;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.3875rem;
+    border: 0;
+    border-radius: 3rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2rem;
+    box-shadow: var(--box-shadow-primary);
+    transition: all .8s ease;
+}
+.section-we-have .note a:hover {
+    background: var(--button-hover);
+}
+
+@media screen and (min-width: 769px) {
+    .section-we-have .item {
+        width: 41rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-we-have .item {
+        width: initial;
+        margin-right: 0;
+        padding: 2rem 1rem;
+    }
+    .section-we-have {
+        background-image: url(/wp-content/uploads/2025/08/banner-mb.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}

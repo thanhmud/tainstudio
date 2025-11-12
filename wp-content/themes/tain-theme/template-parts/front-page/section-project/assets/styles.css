@@ -1,0 +1,51 @@
+.section-project {
+    background-image: url(/wp-content/uploads/2025/08/new-gradient-6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.section-project .section-container > div {
+    max-width: 100%;
+    margin: auto;
+}
+.section-project .swiper-container {
+    width: 100%;
+    height: 100%;
+   
+}
+.section-project .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-project .swiper-slide img {
+    width: 100%; 
+    height: auto;
+}
+.section-project .note {
+    font-size: var(--font-sub1-4);
+}
+.section-project .customer-review {
+    max-width: 50rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 3rem;
+    position: relative;
+}
+@media screen and (min-width: 769px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .section-project .customer-review {
+        margin: 0rem auto;
+    }
+    .section-project {
+        background-image: url(/wp-content/uploads/2025/08/banner-mb.jpg);
+    }
+
+}

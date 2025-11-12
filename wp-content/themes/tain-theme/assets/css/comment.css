@@ -1,0 +1,202 @@
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    font-size: 1.5em;
+    unicode-bidi: bidi-override;
+	user-select: none;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+	line-height: 1rem;
+    padding: 0;
+    text-shadow: 1px 1px #bbb;
+
+}
+
+.comment-form-rating {
+	display:flex;
+	align-items:center;
+}
+.comment-form-rating > label:first-child	{
+	color: var(--color-dark-1, #222);
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%; /* 1.1375rem */
+	margin-right:1.5rem;
+	
+}
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f5b301;
+}
+.comments-area #reply-title {
+	display:none;
+}
+.comments-area {
+	border: 1px solid var(--color-primary, #41633D);
+	padding:1.5rem;
+	margin-top:2.5rem;
+}
+.comments-area h2 {
+	font-size: 1.25rem !important;
+	margin-bottom:1.5rem !important;
+}
+.comments-area .form-submit input{
+	border:none;
+	padding:0.5rem 2.5rem;
+	border-radius: 0.5rem;
+	background:  #F98905;
+	cursor:pointer;
+		color: var(--color-white, #FFF);
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 1.2rem */
+}
+.comments-area .form-submit input:hover{
+	background:var(--button-hover);
+}
+.comment-notes {
+	display:none;
+}
+.comment-form-comment{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	margin-bottom:1rem;
+}
+.comment-form-author, .comment-form-email {
+	display:flex;
+	flex-direction:column;
+	width:48%;
+}
+.comment-form-rating {
+	width:100%;
+	order:-1;
+}
+#commentform {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.comment-form-comment label,.comment-form-author label, .comment-form-email label{
+	color: var(--color-dark-1, #222);
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%; /* 1.1375rem */
+	margin-bottom:0.5rem;
+}
+.comment-form-author input, .comment-form-email input{
+		border-radius:0.25rem;
+		height :2.5rem;
+		border: 1px solid #D9D9D9;
+		outline:none;
+}
+.comment-form-comment textarea {
+	border-radius:0.25rem;
+	height :5.25rem;
+	border: 1px solid #D9D9D9;
+	outline:none;
+}
+.comment-text .comment-rating {
+	display:none;
+}
+.comment-author {
+	display:flex;
+	margin-bottom:0.5rem;
+	align-items:center;
+}
+.comment-author .name-user{
+	color: var(--color-dark-1, #222);
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 1.5rem */
+	margin-right:0.5rem;
+}
+.comment-author .comment-rating {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #f5a623;
+}
+.comment-meta{
+	display:flex;
+	align-items:center;
+	color: var(--color-dark-3, #666);
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 1.3125rem */
+	margin-bottom:1rem;
+}
+.comment-meta .date-time-comment{
+	border-right:1px solid var(--color-light-1,#ccc);
+	padding-right :0.5rem;
+	margin-right:0.5rem;
+}
+.comment-text p{
+	color: var(--color-dark-1, #222);
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 1.5rem */
+}
+.comment-list .comment {
+	margin-bottom:1.5rem;
+	padding-bottom:1.5rem;
+	border-bottom: 1px solid var(--color-light-1);
+}
+.list-comment-container h2{
+	color: var(--color-dark-1, #222);
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%;
+	margin:2.5rem 0;
+}
+.cookies-error {
+	width:100%;
+	margin-bottom:0.5rem;
+	text-decoration:italic;
+}
+.reply-comment .comment-author {
+	display:flex;
+	align-items:center;
+}
+.reply-comment {
+	border-radius: 0.5rem;
+	background: var(--color-light-1, #F6F6F6);
+	padding:1rem;
+}
+.reply-comment .comment-author img {
+	width: 4.9375rem;
+	height: 1.5rem;
+	margin-right:0.5rem;
+}
+.reply-comment .comment-author {
+	color: var(--color-primary, #41633D);
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 1.5rem */
+	text-transform:capitalize;
+}
+.no-comment {
+	margin-top:1rem;
+	color:  #888;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%; /* 1.3rem */
+}

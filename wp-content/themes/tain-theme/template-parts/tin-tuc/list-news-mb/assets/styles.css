@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+    .list-news-mobile {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+    .skeleton-item {
+        background: #e0e0e0;
+        height: 20px;
+        margin: 10px 0;
+        border-radius: 4px;
+        animation: shimmer 1.5s infinite;
+    }
+    #skeleton .skeleton-item:first-child {
+        height: 12rem;
+    }
+    @keyframes shimmer {
+        0% {
+        background-position: -1000px 0;
+        }
+        100% {
+        background-position: 1000px 0;
+        }
+    }
+    #load-more {
+        color: var(--color-secondary-2);
+        font-size: 1rem;
+        background: white;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 1.3rem */
+        padding: 0.5rem 1rem;
+        border-radius: 999rem;
+        border: 1px solid var(--color-secondary-2);
+        display: block;
+        margin: 1.5rem auto 0.5rem;
+    }
+    .item_newsSlide_body {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    
+    /* .featured_news component */
+    .item_newSlide .item_newSlide-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+    .item_newSlide .item_newSlide-content {
+        margin-top: 1rem;
+    }
+    .item_newSlide .item_newSlide-content .item_newSlide-title .title_heading {
+        font-size: var(--font-sub1-6);
+        color: var(--color-dark-1);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 2.1rem */
+        text-align: left;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .item_newSlide .item_newSlide-content .item_newSlide-title .sub_title {
+        overflow: hidden;
+        color: var(--color-dark);
+        text-align: left;
+        text-overflow: ellipsis;
+        font-size: var(--font-body4);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 1.5rem */
+        margin: 0.5rem 0;
+        padding-right: 0.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .item_newSlide .item_newSlide-content .view_productAll {
+        display: inline-block;
+        display: flex;
+        font-size: var(--font-sub1-6);
+        font-weight: bold;
+        color: var(--color-secondary-2);
+        padding: 0 0 0.5rem;
+        margin: 1rem 0 1.5rem;
+    }
+    .item_newSlide
+        .item_newSlide-content
+        .view_productAll
+        .arrow_viewAll_product {
+        width: 1.5rem;
+    }
+    .item_newSlide
+        .item_newSlide-content
+        .view_productAll
+        .arrow_viewAll_product {
+        margin-left: 0.5rem;
+    }
+}

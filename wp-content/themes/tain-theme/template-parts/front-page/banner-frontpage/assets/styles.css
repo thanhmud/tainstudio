@@ -1,0 +1,112 @@
+/*section-banner-header*/
+.section-banner-header {
+    background-image: url(/wp-content/uploads/2025/08/TainStudio-Thumbnail-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-banner-header .banner-main {
+    max-width: 70rem;
+}
+.section-banner-header .banner-main .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 5rem;
+}
+.section-banner-header .banner-main .contact .social-icon img {
+    width: 5rem;
+    height: auto;
+    border-radius: 3rem;
+    transition: box-shadow 1s ease;
+}
+.section-banner-header .banner-main .contact .social-icon img:hover {
+    box-shadow: rgb(255 255 255 / 80%) 0px 5px 15px;
+}
+.section-banner-header h1 {
+    font-size: 4rem; 
+    margin-bottom: 5rem;
+}
+.section-banner-header h2 {
+    position: relative;
+    padding: 3rem;
+    line-height: 4rem;
+    color: var(--color-white);
+}
+.section-banner-header .highlight {
+    color: var(--color-primary);
+    font-family: 'Nunito-Black';
+}
+.section-banner-header h2 .highlight {
+    font-size: var(--font-h2);
+}
+.section-banner-header h2:before {
+  content: "❝";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: auto;
+  font-size: 5rem;
+}
+.section-banner-header h2:after {
+  content: "❞";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 5rem;
+  height: auto;
+  font-size: 5rem;
+}
+.section-banner-header p {
+    font-size: var(--font-h5);
+}
+.quote-mark {
+  font-size: 28px;
+  vertical-align: top;
+  color: #888;
+  margin: 0 4px;
+}
+/*responsive*/
+@media (min-width: 769px) {
+    .section-banner-header .banner-main .contact {
+        width: 70rem;
+    }
+}
+@media (max-width: 768px) {
+    .section-banner-header h1 {
+        font-size: 15vw;
+    }
+    .section-banner-header h2 {
+        font-size: 6vw;
+        padding: 2rem;
+        line-height: 2.5rem;
+    }
+    .section-banner-header h2 .highlight {
+        font-size: 7vw;
+    }
+    .section-banner-header h2:before, .section-banner-header h2:after {
+        font-size: 4rem;
+    }
+    .section-banner-header h2:after {
+        text-align: right;
+    }
+    .section-banner-header .banner-main .contact {
+        position: initial;
+        display: block;
+    }
+    .section-banner-header .social-icon {
+        margin-bottom: 1rem;
+    }
+    .section-banner-header h1 {
+        margin-bottom: 3rem;
+    }
+    .section-banner-header .banner-main .contact .social-icon img {
+        width: 4rem;
+    }
+    .section-banner-header {
+        background-image: url(/wp-content/uploads/2025/08/thumbnail-mb.png);
+    }
+}

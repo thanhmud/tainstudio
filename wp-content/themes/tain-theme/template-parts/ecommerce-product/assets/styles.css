@@ -1,0 +1,43 @@
+.ecommerce-main .button-1 img {
+    background: #EE4D2D;
+}
+.ecommerce-main .button-2 img {
+    background: #1952CE;
+}
+.ecommerce-main .button img {
+    padding: 0.4375rem 2.2rem;
+    cursor: pointer;
+    border-radius: 1.1rem;
+    height: 1.6rem;
+}
+.ecommerce-main .title { 
+  color: var(--color-primary);
+}
+.ecommerce-main .button {
+    display: inline-block;
+    border: 1px solid #e2dbdb;
+    padding: 0.4375rem;
+    border-radius: 1.75rem;
+}
+.ecommerce-main .btn-visit {
+    padding: 0px 1.75rem;
+    display: inline-block;
+    margin: 1.875rem;
+    border-radius: 1.7rem;
+    width: 10rem;
+}
+.product-ecommerce {
+    background-image: url(/wp-content/uploads/2025/03/bg-nutrional-info.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.ecommerce-main .active {
+    opacity: .5;
+}
+@media screen and (max-width: 769px) {
+    .ecommerce-banner img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,49 @@
+.section-about-us .col-lg-4 p {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  border-radius: 3.1rem;
+}
+.section-about-us .col-lg-4 img {
+  width: 8rem;
+  padding: .625rem 2.5rem;
+  border-radius: 1.25rem;
+}
+.section-about-us .div-col {
+  padding: 3.1rem 0;
+  display: flex;
+  align-items: center;
+}
+.section-about-us .div-col.col-lg-4 {
+  justify-content: center;
+}
+.section-about-us .row-first {
+  border-bottom: 1px solid #2222;
+}
+.section-about-us .col-lg-4 {
+  border-right: 1px solid #2222;
+}
+.section-about-us .highlight {
+    color: var(--color-secondary-2);
+    font-family: 'Nunito-Black';
+}
+.section-about-us h2 .highlight {
+    font-size: var(--font-h2);
+}
+.section-about-us .row {
+    color: var(--color-dark-1);
+}
+.section-about-us .col-lg-8 {
+    font-size: var(--font-h4);
+}
+.section-about-us .heading {
+    color: var(--color-secondary-2);
+}
+@media screen and (max-width: 769px) {
+    .section-about-us .div-col {
+        padding: 1.25rem 0;
+    }
+    .section-about-us .div-col.col-lg-8 {
+        text-align: center;
+    }
+}

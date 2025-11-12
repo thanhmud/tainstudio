@@ -1,0 +1,78 @@
+/*section-service*/
+.section-service {
+    background-image: url(/wp-content/uploads/2025/03/freepik__technology-banner-for-website-design-company-tains__67831.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-service .banner-main {
+    max-width: 70rem;
+}
+.section-service h1 {
+    font-size: 4rem; 
+    margin-bottom: 5rem;
+}
+.section-service h2 {
+    position: relative;
+    padding: 3rem;
+    line-height: 4rem;
+    color: var(--color-white);
+}
+.section-service .highlight {
+    color: var(--color-primary);
+    font-family: 'Nunito-Black';
+}
+.section-service h2 .highlight {
+    font-size: var(--font-h2);
+}
+.section-service h2:before {
+    content: "❝";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: auto;
+    font-size: 5rem;
+}
+.section-service h2:after {
+  content: "❞";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 5rem;
+  height: auto;
+  font-size: 5rem;
+}
+.section-service p {
+    font-size: var(--font-h5);
+}
+.quote-mark {
+  font-size: 28px;
+  vertical-align: top;
+  color: #888;
+  margin: 0 4px;
+}
+
+/*responsive*/
+@media (min-width: 769px) {
+   
+}
+@media (max-width: 768px) {
+    .section-service h1 {
+        font-size: 15vw;
+    }
+    .section-service h2 {
+        font-size: 6vw;
+        padding: 2rem;
+        line-height: 2.5rem;
+    }
+    .section-service h2 .highlight {
+        font-size: 7vw;
+    }
+    .section-service h2:before, .section-service h2:after {
+        font-size: 4rem;
+    }
+    .section-service h2:after {
+        text-align: right;
+    }
+}

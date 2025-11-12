@@ -1,0 +1,125 @@
+.section-banner {
+    background-image: url(/wp-content/uploads/2025/08/About-us-banner-min.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-banner:before {
+    content: "";
+    background: linear-gradient(90deg, #003005 0%, #004701 100%);
+    opacity: .6;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.section-banner .banner-main {
+    max-width: 70rem;
+}
+.section-banner h1 {
+    font-size: 4rem; 
+    margin-bottom: 5rem;
+}
+.section-banner h2 {
+    position: relative;
+    padding: 3rem;
+    line-height: 4rem;
+    color: var(--color-white);
+
+}
+.section-banner .highlight {
+    color: var(--color-primary);
+    font-family: 'Nunito-Black';
+}
+.section-banner h2 .highlight {
+    font-size: var(--font-h2);
+}
+.section-banner h2:before {
+  content: "❝";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: auto;
+  font-size: 5rem;
+}
+.section-banner h2:after {
+  content: "❞";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 5rem;
+  height: auto;
+  font-size: 5rem;
+}
+.section-banner p {
+    font-size: var(--font-h5);
+}
+
+/* ocean */
+.section-banner .wrapper_ocean {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    bottom: 4.5rem;
+
+}
+.section-banner .wrapper_ocean .ocean {
+    position: relative;
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+.section-banner .wrapper_ocean .waves {
+    position: relative;
+    width: 100vw;
+    height: 8.25rem;
+    margin-bottom: -7px;
+}
+.section-banner .wrapper_ocean .parallax > use {
+    animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(85px, 0, 0);
+    }
+    100% {
+        transform: translate3d(-90px, 0, 0);
+    }
+}
+@media (max-width: 768px) {
+    /* ocean */
+    .section-banner .wrapper_ocean {
+        position: absolute;
+        width: 100%;
+        bottom: -0.3rem;
+    }
+    .section-banner .wrapper_ocean .ocean .waves {
+        height: 1.7rem;
+    }
+    .section-banner h1 {
+        font-size: 15vw;
+    }
+    .section-banner h2 {
+        font-size: 6vw;
+        padding: 2rem;
+        line-height: 2.5rem;
+    }
+    .section-banner h2 .highlight {
+        font-size: 7vw;
+    }
+    .section-banner h2:before, .section-banner h2:after {
+        font-size: 4rem;
+    }
+    .section-banner h2:after {
+        text-align: right;
+    }
+    .section-banner h1 {
+        margin-bottom: 3rem;
+    }
+}

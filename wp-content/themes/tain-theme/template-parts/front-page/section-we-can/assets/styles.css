@@ -1,0 +1,74 @@
+/*section-we-can*/
+.section-we-can {
+    background-image: url(/wp-content/uploads/2025/08/new-gradient-6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-we-can .content {
+    text-align: center;
+}
+/*.section-we-can .item {
+    display: inline-block;
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    box-shadow: rgb(0 255 21 / 35%) 4px 12px 15px;
+    text-align: left;
+}*/
+.section-we-can .item .child-title img {
+    filter: invert(1);
+    width: 2.5rem;
+    height: auto;
+    display: block;
+    transition: transform 0.8s ease;
+}
+.section-we-can .note {
+    font-size: var(--font-sub1-4);
+}
+.section-we-can .child-content ul {
+    list-style-type: disclosure-closed;
+}
+.section-we-can .item:hover img { 
+    transform: rotate(360deg);
+}
+.section-we-can .item {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    box-shadow: rgb(0 255 21 / 35%) 4px 12px 15px;
+    text-align: left;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+.section-we-can .item:hover {
+    background: #01431d;
+}
+.section-we-can .item {
+    width: initial;
+    margin-right: 2rem;
+}
+
+
+@media screen and (min-width: 769px) {
+    .section-we-can .item {
+        width: 17rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-we-can .item {
+        padding: 2rem 1rem;
+    }
+    .section-we-can .item {
+        margin-right: 0;
+    }
+    .section-we-can {
+        background-image: url(/wp-content/uploads/2025/08/banner-mb.jpg);
+    }
+}
