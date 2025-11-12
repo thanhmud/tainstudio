@@ -207,13 +207,11 @@ ul.ul-language > .product-li .sub-menu a {
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 130%; /* 1.3rem */
+    line-height: 130%;
     color: #aeaeaa;
 }
 .language-switcher a.current-lang {
     color: var(--color-white);
-    /*padding-right: var(--spacing-1);*/
-    /*border-right: 0.1rem solid;*/
 }
 .input-box {
     margin-left: 2.5rem;
@@ -264,7 +262,7 @@ ul.ul-language > .product-li .sub-menu a {
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.3125rem */
+    line-height: 150%;
 }
 .container-search .search-box input::placeholder {
     color: var(--color-grey-1, #888);
