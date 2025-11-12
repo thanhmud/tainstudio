@@ -3,7 +3,7 @@
 // ============================== start wp_enqueue lib =====================//
 function wp_enqueue_lib()
 {
-    $version = '0.0.11';
+    $version = '0.0.13';
     //js
     wp_enqueue_script('front-page', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', [], false, true);
 
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', 'wp_enqueue_lib', 1000);
 // ============================== wp_enqueue lib =====================//
 function wp_enqueue_local()
 {
-    $version = '0.0.11';
+    $version = '0.0.13';
     //global
     wp_enqueue_style('global', get_theme_file_uri('/assets/css/global.css?v=' . $version));
     wp_enqueue_script('global', get_theme_file_uri('/assets/js/global.js?v=' . $version), [], false, true);
