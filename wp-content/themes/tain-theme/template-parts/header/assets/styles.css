@@ -208,7 +208,7 @@ ul.ul-language > .product-li .sub-menu a {
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
-    color: #aeaeaa;
+    color: #a3a3a3;
 }
 .language-switcher a.current-lang {
     color: var(--color-white);
