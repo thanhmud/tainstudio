@@ -118,9 +118,11 @@ header {
 }
 ul.ul-language > li, ul.ul-language .sub-menu .menu-item img {
     margin-right: .5rem;
+
 }
 .header .container-header .navbar > ul > li:last-child {
     margin-right: 0;
+
 }
 .input-box {
     display: flex;
